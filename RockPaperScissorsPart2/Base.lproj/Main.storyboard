@@ -37,6 +37,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Play Again">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="playAgainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6rB-nS-Yoj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV5-dK-u6c">
                                 <rect key="frame" x="16" y="415" width="99" height="115"/>
@@ -45,6 +48,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="👊">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="rockButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJX-Oi-8hP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R60-8Y-Dd1">
                                 <rect key="frame" x="147" y="415" width="99" height="115"/>
@@ -53,6 +59,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="✋">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="paperButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FWE-Pl-NlS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epf-ga-dq1">
                                 <rect key="frame" x="278" y="415" width="99" height="115"/>
@@ -61,11 +70,22 @@
                                 <buttonConfiguration key="configuration" style="plain" title="✌️">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="scissorsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8c-ZD-YXV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="opponentLabel" destination="CeY-Ih-rpZ" id="8ZX-yd-e4A"/>
+                        <outlet property="paperButton" destination="R60-8Y-Dd1" id="1TL-V8-ICk"/>
+                        <outlet property="playAgainButton" destination="hTW-fC-B1A" id="C0u-Kh-2aP"/>
+                        <outlet property="rockButton" destination="mV5-dK-u6c" id="frP-2A-clu"/>
+                        <outlet property="scissorsButton" destination="epf-ga-dq1" id="phS-SF-Rqd"/>
+                        <outlet property="statusLabel" destination="rH1-Tl-p0Q" id="cdy-GI-ffL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

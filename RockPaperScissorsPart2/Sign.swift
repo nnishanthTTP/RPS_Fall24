@@ -7,6 +7,21 @@
 
 import Foundation
 
+// generates a random move for our CPU
+func randomMove() -> Move {
+    let choice = Int.random(in: 1...3)
+    
+    if choice == 1 {
+        return Move(sign: .rock)
+    }
+    else if choice == 2 {
+        return Move(sign: .paper)
+    }
+    else {
+        return Move(sign: .scissors)
+    }
+}
+
 //Sign enum => to allow us to choose between our three moves
 // we'll learn about these enumerations more later
 enum Sign {
